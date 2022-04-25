@@ -57,6 +57,12 @@ ROOT_URLCONF = 'music_library.urls'
 
 CORS_ORIGIN_ALLOW_ALL=True
 
+
+REST_FRAMEWORK = {
+    'COERCE_DECIMAL_TO_STRING': False
+}
+
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
