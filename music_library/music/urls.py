@@ -3,8 +3,8 @@ from .import views
 
 
 urlpatterns = [
-    path('', views.music_list),
-    path('<int:pk>/', views.music_detail),
+    path('music/', views.music_list),
+    path('music/<int:pk>/', views.music_detail),
 ]
     
 
